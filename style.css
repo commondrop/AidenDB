@@ -15,6 +15,10 @@ body{
     flex-direction: column;
     padding: 60px;
 }
+body.light{
+    background: #eee;
+    color: #131313;
+}
 .card{
     width: 250px;
     height: 100px;
@@ -28,6 +32,10 @@ body{
     font-weight: 700;
     font-family: 'Roboto';
     padding: 10px;
+}
+.card.light{
+    background: white;
+    color: #131313;
 }
 .icon-cards{
     width: 100%;
@@ -63,6 +71,11 @@ body{
     margin-right: auto;
     margin-left: auto;
     padding-left: 30px;
+}
+#search.light{
+    background: white;
+    color: var(--fg);
+    box-shadow: 2px 2px 3px black;
 }
 #search:hover{
     outline: 1px solid var(--red);
@@ -159,6 +172,9 @@ header h2{
     font-size: 4em;
     cursor: pointer;
 }
+.light{
+    color:#131313;
+}
 header ul{
     display: flex;
     flex-direction: row;
@@ -175,4 +191,12 @@ header ul li a{
 }
 header ul li a:hover{
     color: var(--red)
+}
+header ul svg{
+    color: #eee;
+    margin-left: 25px;
+    cursor: pointer;
+}
+header ul svg:hover{
+    color: var(--red);
 }

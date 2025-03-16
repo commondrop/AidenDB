@@ -9,7 +9,12 @@ const modalWebsite = document.querySelector("[data-modal-website]");
 const modalCompany = document.querySelector("[data-modal-company]");
 const modalAddress = document.querySelector("[data-modal-address]");
 const closeModal = document.querySelector(".close");
-
+const background = document.querySelector("body");
+const bgtoggle = document.querySelector(".bgtoggle");
+const header = document.querySelector('h2');
+const a = document.querySelectorAll("a");
+const searchlight = document.getElementById("search");
+const cardlight = document.querySelectorAll(".card");
 
 let users = []
 
@@ -56,3 +61,16 @@ userModal.addEventListener("click", (e) => {
         userModal.classList.remove("show");
     }
 });
+
+bgtoggle.addEventListener("click", () => {
+    background.classList.toggle("light");
+    header.classList.toggle('light');
+    a.forEach(e => {
+        e.classList.toggle("light");
+    })
+    bgtoggle.classList.toggle("light");
+    searchlight.classList.toggle("light");
+    card.forEach(e => {
+        e.classList.toggle("light");
+    })
+})
