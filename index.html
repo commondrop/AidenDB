@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+
+<body>
+    <header>
+        <h2 href="#">Aiden DB</h2>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="">Github</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </header>
+    <div class="search-wrapper">
+        <input type="search" id="search" placeholder="Search database..." data-search>
+    </div>
+    <div class="icon-cards" data-user-cards-container>
+        
+        <template data-user-template>
+            <div class="card">
+                <div class="name" data-name></div>
+                <div class="email" data-email></div>
+            </div>
+        </template>
+        <div id="user-modal" class="modal hide">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 data-modal-name></h2>
+                <p><strong>Email:</strong> <span data-modal-email></span></p>
+                <p><strong>Phone:</strong> <span data-modal-phone></span></p>
+                <p><strong>Website:</strong> <span data-modal-website></span></p>
+                <p><strong>Company:</strong> <span data-modal-company></span></p>
+                <p><strong>Address:</strong> <span data-modal-address></span></p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>
