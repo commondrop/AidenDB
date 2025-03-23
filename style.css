@@ -13,11 +13,13 @@ body{
     background: var(--bg);
     display: flex;
     flex-direction: column;
-    padding: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+    justify-content: center;
 }
 body.light{
     background: #eee;
-    color: #131313;
+    color: #3C3C43;
 }
 .card{
     width: 250px;
@@ -34,10 +36,12 @@ body.light{
     padding: 10px;
 }
 .card.light{
-    background: white;
-    color: #131313;
+    background-color: white;
+    color: #3C3C43;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.171);
 }
 .icon-cards{
+    
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -75,7 +79,7 @@ body.light{
 #search.light{
     background: white;
     color: var(--fg);
-    box-shadow: 2px 2px 3px black;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.171);
 }
 #search:hover{
     outline: 1px solid var(--red);
@@ -86,24 +90,7 @@ body.light{
     font-size: 1rem;
     font-weight: 500;
 }
-.icon-tooltip{
-    display: block;
-    font-size: 12px;
-    line-height: 20px;
-    transform: scale(.9);
-    font-weight: 400;
-    background: var(--vp-c-brand-dark);
-    color: #fff;
-    z-index: 99;
-    white-space: nowrap;
-    padding: 2px 8px;
-    border-radius: 4px;
-    box-shadow: var(--vp-shadow-1);
-    opacity: 0;
-    pointer-events: none;
-    transition: cubic-bezier(.19,1,.22,1) .2s;
-    transition-property: opacity, transform;
-}
+
 .hide{
     display: none;
 }
@@ -169,11 +156,14 @@ header h2{
     font-family: 'Roboto';
     font-weight: 700;
     text-transform: uppercase;
-    font-size: 4em;
+    font-size: 2.5em;
     cursor: pointer;
 }
+header h2 span{
+    color: var(--red);
+}
 .light{
-    color:#131313;
+    color:#3C3C43;
 }
 header ul{
     display: flex;
