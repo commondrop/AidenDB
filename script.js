@@ -50,6 +50,8 @@ fetch("data.txt")
 
             return{ name: user.name, email: user.email, element: card};
         });
+
+        cardlight = document.querySelectorAll(".card");
     }));
 
 closeModal.addEventListener("click", () => {
@@ -70,7 +72,7 @@ bgtoggle.addEventListener("click", () => {
     })
     bgtoggle.classList.toggle("light");
     searchlight.classList.toggle("light");
-    card.forEach(e => {
+    document.querySelectorAll(".card").forEach(e => {
         e.classList.toggle("light");
-    })
+    });
 })
